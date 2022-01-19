@@ -1,0 +1,20 @@
+[	
+	{
+		"email": "test1@gmail.com",
+		"expiry": "1230",
+		"cvc": "143",
+		"zip": "600001"
+	},
+	{
+		"email": "test2@gmail.com",
+		"expiry": "1130",
+		"cvc": "999",
+		"zip": "600092"
+	},
+	{
+		"email": "test3@gmail.com",
+		"expiry": "1130",
+		"cvc": "123",
+		"zip": "600092"
+	}
+]
