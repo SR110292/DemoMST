@@ -1,36 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+<testng-results skipped="0" failed="1" ignored="0" total="4" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Surefire suite" duration-ms="34514" started-at="2022-01-15T12:24:14Z" finished-at="2022-01-15T12:24:49Z">
+  <suite name="Surefire suite" duration-ms="33077" started-at="2022-01-20T06:54:41Z" finished-at="2022-01-20T06:55:14Z">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:parallel.TestParallelRunner@1e397ed7]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:parallel.TestParallelRunner@5d52e3ef]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test name="Surefire test" duration-ms="34514" started-at="2022-01-15T12:24:14Z" finished-at="2022-01-15T12:24:49Z">
+    <test name="Surefire test" duration-ms="33077" started-at="2022-01-20T06:54:41Z" finished-at="2022-01-20T06:55:14Z">
       <class name="parallel.TestParallelRunner">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:parallel.TestParallelRunner@1e397ed7]" name="setUpClass" is-config="true" duration-ms="685" started-at="2022-01-15T12:24:14Z" finished-at="2022-01-15T12:24:15Z">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:parallel.TestParallelRunner@5d52e3ef]" name="setUpClass" is-config="true" duration-ms="1580" started-at="2022-01-20T06:54:41Z" finished-at="2022-01-20T06:54:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:parallel.TestParallelRunner@1e397ed7]" name="runScenario" duration-ms="33239" started-at="2022-01-15T12:24:15Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-01-15T12:24:48Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Validation of buying multiple least expensive products successfully"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Optional[BuyProducts]"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:parallel.TestParallelRunner@1e397ed7]" name="runScenario" duration-ms="33153" started-at="2022-01-15T12:24:15Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-01-15T12:24:48Z">
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:parallel.TestParallelRunner@5d52e3ef]" name="runScenario" duration-ms="29799" started-at="2022-01-20T06:54:43Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-01-20T06:55:12Z">
           <params>
             <param index="0">
               <value>
@@ -46,23 +30,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:parallel.TestParallelRunner@1e397ed7]" name="runScenario" duration-ms="33381" started-at="2022-01-15T12:24:15Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-01-15T12:24:49Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Duplication of validation of buying multiple least expensive products successfully"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Optional[BuyProductsDuplication]"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:parallel.TestParallelRunner@1e397ed7]" name="runScenario" duration-ms="33444" started-at="2022-01-15T12:24:15Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-01-15T12:24:49Z">
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:parallel.TestParallelRunner@5d52e3ef]" name="runScenario" duration-ms="30350" started-at="2022-01-20T06:54:43Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-01-20T06:55:13Z">
           <params>
             <param index="0">
               <value>
@@ -75,10 +43,55 @@
               </value>
             </param>
           </params>
+          <exception class="com.google.common.base.VerifyException">
+            <message>
+              <![CDATA[Payment submission failed. Known bug!]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.google.common.base.VerifyException: Payment submission failed. Known bug!
+at com.google.common.base.Verify.verify(Verify.java:123)
+at pageObjects.CartPage.validatePaymentWindowClosed(CartPage.java:174)
+at parallel.CartPageSteps.the_payment_window_should_be_closed_automatically_after_few_seconds(CartPageSteps.java:80)
+at ✽.the payment window should be closed automatically after few seconds(file:///D:/Courses/Demo/src/test/resources/parallel/BuyProducts.feature:18)
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.google.common.base.VerifyException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:parallel.TestParallelRunner@1e397ed7]" name="tearDownClass" is-config="true" duration-ms="357" started-at="2022-01-15T12:24:49Z" finished-at="2022-01-15T12:24:49Z">
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:parallel.TestParallelRunner@5d52e3ef]" name="runScenario" duration-ms="29946" started-at="2022-01-20T06:54:43Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-01-20T06:55:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Duplication two of validation of buying multiple least expensive products successfully"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[BuyProductsDuplication2]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:parallel.TestParallelRunner@5d52e3ef]" name="runScenario" duration-ms="30982" started-at="2022-01-20T06:54:43Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-01-20T06:55:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Duplication three of validation of buying multiple least expensive products successfully"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[BuyProductsDuplication3]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:parallel.TestParallelRunner@5d52e3ef]" name="tearDownClass" is-config="true" duration-ms="426" started-at="2022-01-20T06:55:14Z" finished-at="2022-01-20T06:55:14Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

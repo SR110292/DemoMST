@@ -22,6 +22,7 @@ public class Hooks {
 	public void embedScreenshot(Scenario scenario) {
 		if (scenario.isFailed()) {
 			testContext.getScreenshot().embedScreenshot(scenario);
+			testContext.getScreenshot().takeScreenshot(scenario.getName());
 		}
 	}
 

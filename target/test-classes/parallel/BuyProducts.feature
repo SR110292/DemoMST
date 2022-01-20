@@ -21,4 +21,3 @@ Scenario Outline: Validation of buying multiple least expensive products success
 	Examples: 
 		|SheetName|RowNumber|	
 		|data|0|
-		|data|1|

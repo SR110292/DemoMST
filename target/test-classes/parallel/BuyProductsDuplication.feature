@@ -21,4 +21,3 @@ Scenario Outline: Duplication of validation of buying multiple least expensive p
 	Examples: 
 		|SheetName|RowNumber|	
 		|data|0|
-		|data|1|

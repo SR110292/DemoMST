@@ -5,6 +5,7 @@ dataProviders\JsonDataReader.class
 managers\FileReaderManager.class
 pageObjects\ProductPage.class
 managers\DriverManager.class
+utilities\AllureListener.class
 utilities\ScenarioContext.class
 utilities\Screenshot.class
 parallel\ConfirmationPageSteps.class

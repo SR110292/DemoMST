@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Surefire test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>4/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>3/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sat Jan 15 17:54:14 IST 2022</td>
+<td>Started on:</td><td>Thu Jan 20 12:24:41 IST 2022</td>
 </tr>
-<tr><td>Total time:</td><td>34 seconds (34514 ms)</td>
+<tr><td>Total time:</td><td>33 seconds (33077 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,30 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='parallel.TestParallelRunner.runScenario()'><b>runScenario</b><br>Test class: parallel.TestParallelRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validation of buying multiple least expensive products successfully", "Optional[BuyProducts]"</td>
+<td><div><pre>com.google.common.base.VerifyException: Payment submission failed. Known bug!
+	at com.google.common.base.Verify.verify(Verify.java:123)
+	at pageObjects.CartPage.validatePaymentWindowClosed(CartPage.java:174)
+	at parallel.CartPageSteps.the_payment_window_should_be_closed_automatically_after_few_seconds(CartPageSteps.java:80)
+	at ?.the payment window should be closed automatically after few seconds(file:///D:/Courses/Demo/src/test/resources/parallel/BuyProducts.feature:18)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1892546201", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1892546201'><pre>com.google.common.base.VerifyException: Payment submission failed. Known bug!
+	at com.google.common.base.Verify.verify(Verify.java:123)
+	at pageObjects.CartPage.validatePaymentWindowClosed(CartPage.java:174)
+	at parallel.CartPageSteps.the_payment_window_should_be_closed_automatically_after_few_seconds(CartPageSteps.java:80)
+	at ?.the payment window should be closed automatically after few seconds(file:///D:/Courses/Demo/src/test/resources/parallel/BuyProducts.feature:18)
+</pre></div></td>
+<td>30</td>
+<td>parallel.TestParallelRunner@5d52e3ef</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -77,23 +101,18 @@ function toggleAllBoxes() {
 <tr>
 <td title='parallel.TestParallelRunner.runScenario()'><b>runScenario</b><br>Test class: parallel.TestParallelRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Duplication of validation of buying multiple least expensive products successfully", "Optional[BuyProductsDuplication]"</td>
 <td></td>
-<td>33</td>
-<td>parallel.TestParallelRunner@1e397ed7</td></tr>
+<td>29</td>
+<td>parallel.TestParallelRunner@5d52e3ef</td></tr>
 <tr>
-<td title='parallel.TestParallelRunner.runScenario()'><b>runScenario</b><br>Test class: parallel.TestParallelRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validation of buying multiple least expensive products successfully", "Optional[BuyProducts]"</td>
+<td title='parallel.TestParallelRunner.runScenario()'><b>runScenario</b><br>Test class: parallel.TestParallelRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Duplication two of validation of buying multiple least expensive products successfully", "Optional[BuyProductsDuplication2]"</td>
 <td></td>
-<td>33</td>
-<td>parallel.TestParallelRunner@1e397ed7</td></tr>
+<td>29</td>
+<td>parallel.TestParallelRunner@5d52e3ef</td></tr>
 <tr>
-<td title='parallel.TestParallelRunner.runScenario()'><b>runScenario</b><br>Test class: parallel.TestParallelRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Duplication of validation of buying multiple least expensive products successfully", "Optional[BuyProductsDuplication]"</td>
+<td title='parallel.TestParallelRunner.runScenario()'><b>runScenario</b><br>Test class: parallel.TestParallelRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Duplication three of validation of buying multiple least expensive products successfully", "Optional[BuyProductsDuplication3]"</td>
 <td></td>
-<td>33</td>
-<td>parallel.TestParallelRunner@1e397ed7</td></tr>
-<tr>
-<td title='parallel.TestParallelRunner.runScenario()'><b>runScenario</b><br>Test class: parallel.TestParallelRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validation of buying multiple least expensive products successfully", "Optional[BuyProducts]"</td>
-<td></td>
-<td>33</td>
-<td>parallel.TestParallelRunner@1e397ed7</td></tr>
+<td>30</td>
+<td>parallel.TestParallelRunner@5d52e3ef</td></tr>
 </table><p>
 </body>
 </html>
