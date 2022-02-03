@@ -20,4 +20,4 @@ Scenario Outline: Duplication three of validation of buying multiple least expen
 	
 	Examples: 
 		|SheetName|RowNumber|	
-		|data|0|
+		|data|1|
